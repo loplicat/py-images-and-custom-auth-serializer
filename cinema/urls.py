@@ -22,6 +22,6 @@ router.register("orders", OrderViewSet)
 
 urlpatterns = [
     path("", include(router.urls))
-] + + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 app_name = "cinema"
